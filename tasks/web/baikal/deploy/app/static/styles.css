@@ -1,0 +1,22 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.main-content {
+    padding: 20px;
+    background-color: #ececec;
+}
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Что бы не забыть, мое имя и пароль - Dobroslav SlavyaneNavsegda*/

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Forum', serif;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  max-width: 600px;
+}
+
+.bg-transparency {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.btn-custom {
+  background-color: yellow;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+.btn-custom:hover {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+a.custom-link {
+  color: yellow;
+  text-shadow: 1px 1px 2px black;
+}
+
+a.custom-link:hover {
+  color: darkgoldenrod;
+  text-shadow: 1px 1px 2px white;
+}

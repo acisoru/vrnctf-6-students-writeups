@@ -1,0 +1,24 @@
+name: auth36rus
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8004:8004"
+    environment:
+      PYTHONUNBUFFERED: 1
+      FLAG: "vrnctf{v210m_2h0py_y4ch324}"
+      DB_NAME: "auth36rus"
+    depends_on:
+      - db
+
+  db:
+    container_name: auth36rus-database
+    image: "postgres:13.3"
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_DB: "auth36rus"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+

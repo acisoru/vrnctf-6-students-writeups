@@ -1,0 +1,33 @@
+name: AUTH36RUS
+author: "@G4st3r21"
+description: |
+  `@G4st3r21`
+    Выбей пароль у злостного древне-воронежского ящера!
+category: web
+value: 100
+type: dynamic
+
+extra: # сами посчитайте
+  initial: 100
+  decay: 10
+  minimum: 10
+
+connection_info: https://auth36rus.tasks.ctf.vrnctf.ru
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{v210m_2h0py_y4ch324}",
+    data: "case_insensitive",
+  }
+
+files:
+  - public/read_user_query.py
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - web
+state: visible
+# Версия вашей задачи
+version: "1.0"

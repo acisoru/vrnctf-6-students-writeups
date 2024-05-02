@@ -1,0 +1,29 @@
+name: The Magic Canvas
+author: "@pipline_sh"
+description: |
+  `@pipline_sh`
+
+   Однажды, царь всея Руси, Иван Васильевич Лавлинский, послал Илью Муромца найти волшебный артефакт, по предположению, находящийся у старца Виктора Корнеплода. 
+   Старика то он нашел, осталось расспросить его об артефакте... Не забудь обернуть найденый артефакт в vrnctf{}. 
+
+category: reverse
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{just_h00k_curs0r}",
+    data: "case_insensitive",
+    }
+
+files:
+  - public/task.zip
+
+state: visible
+version: "0.1"
+

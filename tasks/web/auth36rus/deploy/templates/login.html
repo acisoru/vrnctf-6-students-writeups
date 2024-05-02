@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в сервис</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum&display=swap"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/authentication.css">
+</head>
+<body>
+<img src="/static/images/background.jpg" alt="Фоновое изображение" class="background-image">
+<div class="container bg-transparency">
+    <h1 class="mb-4">Въходъ</h1>
+    <form id="login-form">
+        <div class="form-group">
+            <label for="login">Имѧ:</label>
+            <input type="text" class="form-control" id="login" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Тајьнъ слово:</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-custom">Войти</button>
+    </form>
+    <p class="mt-2">
+        Нет аккаунта? <a href="/register" class="custom-link">Зарегистрируйтесь</a>
+    </p>
+</div>
+<script src="/static/js/login.js"></script>
+</body>
+</html>

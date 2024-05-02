@@ -1,0 +1,29 @@
+name: Petya love russian gaming
+author: "@pipline_sh"
+description: |
+  `@pipline_sh`
+
+   Сейчас, российские игры выходят все чаще. Давайте же оценим новую визуальную новеллу от русов.exe!
+   Не забудь обернуть найденый флаг в vrnctf{}.
+
+category: reverse
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+connection_info: https://mega.nz/file/zhFU0aLa#Gi8lMnmQ_28B3bnDvB7OS_HsmtaoxFQo7T6MoRmOmBU
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{h3ll0_fr0m_scratch}",
+    data: "case_insensitive",
+    }
+
+
+state: visible
+version: "0.1"
+

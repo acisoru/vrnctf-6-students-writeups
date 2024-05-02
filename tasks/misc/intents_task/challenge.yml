@@ -1,0 +1,26 @@
+name: Perun Vault
+author: "@alexereh"
+description: |
+  `@alexereh`
+
+  Ящеры украли секретные данные и запихали в робота окаянного! Надо вернуть у них наши данные! 
+category: misc
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{1nten75_@re_cr@zy}",
+    data: "case_insensitive"
+    }
+
+files:
+  - public/vault.apk
+
+state: visible
+version: "0.1"

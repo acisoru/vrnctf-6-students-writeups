@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Двухфакторный вход - Лавка водицы Байкальской</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            max-width: 500px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-group {
+            display: flex;
+            justify-content: center;
+        }
+        .form-group input {
+            flex: 1;
+            margin-right: 10px;
+            text-align: center;
+            max-width: 40px;
+            max-height: 40px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">Лавка водицы Байкальской</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Вход</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Запись</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container main-content">
+        <section>
+            <h1>Двухфакторный вход</h1>
+            <form action="/2fa" method="POST">
+                {% if message != None %}
+                <div class="alert alert-danger" role="alert">
+                    {{ message }}
+                </div>
+                {% else %}
+                <label class="center">Вам отправлен гонец с кодом</label>
+                {% endif %}
+
+                <div class="form-group">
+                    <input type="number" class="form-control" name="digit1" maxlength="1" size="1" placeholder="-" oninput="this.value = this.value.slice(0, 1)">
+                    <input type="number" class="form-control" name="digit2" maxlength="1" size="1" placeholder="-" oninput="this.value = this.value.slice(0, 1)">
+                    <input type="number" class="form-control" name="digit3" maxlength="1" size="1" placeholder="-" oninput="this.value = this.value.slice(0, 1)">
+                    <input type="number" class="form-control" name="digit4" maxlength="1" size="1" placeholder="-" oninput="this.value = this.value.slice(0, 1)">
+                </div>
+                <input type="hidden" name="factor_token" value="{{ factor_token }}">
+                <button type="submit" class="btn btn-primary btn-block">Подтвердить</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

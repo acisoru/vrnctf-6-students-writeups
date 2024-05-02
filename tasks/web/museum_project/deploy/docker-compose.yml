@@ -1,0 +1,49 @@
+name: museum_project
+services:
+  api:
+    container_name: server
+    build: server
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    #    env_file:
+    #      - .env
+    environment:
+      PYTHONUNBUFFERED: 1
+      DB_NAME: "museum_project"
+      FLAG: "vrnctf{1_7u7_y45ch32_n3_p083d11}"
+    depends_on:
+      - db
+
+  nginx:
+    container_name: nginx
+    build:
+      dockerfile: nginx/Dockerfile.nginx
+      context: .
+    ports:
+      - "83:80"
+    depends_on:
+      - api
+
+  client:
+    container_name: client
+    build: client
+    restart: unless-stopped
+    ports:
+      - "8003"
+    environment:
+      PYTHONUNBUFFERED: 1
+    depends_on:
+      - api
+      - nginx
+
+  db:
+    container_name: mp-database
+    image: "postgres:13.3"
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_DB: "museum_project"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+

@@ -1,0 +1,7 @@
+name: knyaz_task
+services:
+  knyaz:
+    build: .
+    restart: always
+    ports:
+      - "8052:8080"

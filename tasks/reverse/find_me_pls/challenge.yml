@@ -1,0 +1,28 @@
+name: Dense forest
+author: "@pipline_sh"
+description: |
+  `@pipline_sh`
+
+   А вы знали, что леса в России могут быть по настоящему дремучими? Попробуй проскакать один из них на своем коне, сопоставляя карту и маршрут (это важно, чтобы не заблудиться). 
+
+category: reverse
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{h1d_4m0ng_0wn}",
+    data: "case_insensitive",
+    }
+
+files:
+  - public/task.zip
+
+state: visible
+version: "0.1"
+

@@ -1,0 +1,7 @@
+name: baikal
+services:
+  baikal:
+    build: .
+    restart: always
+    ports:
+      - "8012:8000"

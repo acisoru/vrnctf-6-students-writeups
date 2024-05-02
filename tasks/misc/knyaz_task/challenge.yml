@@ -1,0 +1,31 @@
+name: The Fallen One?
+author: "@alexereh"
+description: |
+  `@alexereh`
+
+  Один рус потерялся. Кто?
+category: misc
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+# connection_info: https://fallen-knyaz.tasks.ctf.vrnctf.ru/
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{h3r3_1_f0und_th33}",
+    data: "case_insensitive"
+    } 
+
+files:
+  - public/knyaz.apk
+
+tags:
+  - android
+
+state: visible
+version: "0.1"

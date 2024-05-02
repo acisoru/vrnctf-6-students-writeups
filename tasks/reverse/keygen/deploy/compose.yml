@@ -1,0 +1,7 @@
+name: keygen
+services:
+  keygen:
+    build: .
+    restart: always
+    ports:
+      - "82:5000"

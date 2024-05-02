@@ -1,0 +1,7 @@
+name: rfw_task
+services:
+  lizard:
+    build: .
+    restart: always
+    ports:
+      - "8051:8080"

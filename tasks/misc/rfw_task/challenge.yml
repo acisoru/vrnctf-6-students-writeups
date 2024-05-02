@@ -1,0 +1,31 @@
+name: Not in plain sight
+author: "@alexereh"
+description: |
+  `@alexereh`
+
+  Был протестирован уничтожитель ящеров. Но очевидно, что они спрятались где-то ещё.
+category: misc
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+# connection_info: https://destroyer.tasks.ctf.vrnctf.ru/
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{y2sher1_et0_5er10zn0}",
+    data: "case_insensitive"
+    }
+
+files:
+  - public/destroyer.apk 
+
+tags:
+  - android
+
+state: visible
+version: "0.1"

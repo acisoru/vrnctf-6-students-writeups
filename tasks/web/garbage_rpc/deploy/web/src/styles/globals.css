@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'slav';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/TDVoBlagoDaryu.otf) format('opentype');
+}
+
+:root {
+  color-scheme: dark;
+}

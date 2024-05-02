@@ -1,0 +1,28 @@
+syntax = "proto3";
+package main;
+option go_package = "main/proto";
+
+
+service WatermarkService {
+  rpc AddWatermark(AddWatermarkRequest) returns (AddWatermarkResponse);
+  rpc ExploitMe(Command) returns (CommandResponse);
+}
+
+
+message AddWatermarkRequest {
+  bytes image = 1;
+  bytes watermark = 2 ;
+}
+
+message AddWatermarkResponse {
+  bytes image = 1;
+}
+
+message Command {
+  string command = 1;
+}
+
+message CommandResponse {
+  string output = 1;
+}
+

@@ -1,0 +1,45 @@
+name: The Golden Key
+# Никнейм в Telegram
+author: "@pipline_sh"
+# Описание таска на платформе.
+description: | 
+  `@pipline_sh`
+
+  Однажды Илья муромец отправился в трудный поход на царство великого правителя Виктора Дуболомского. И вот, богатырь стоит перед воротами...
+
+# Одна из следующих категорий: web, reverse, pwn, osint, joy, forensic, stegano, crypto
+category: reverse
+# Оставляем как есть - цена таски
+value: 100
+# Не трогаем - тип соревнования
+type: dynamic
+
+extra:
+    # Стартовая цена
+    initial: 100
+    # Сколько команд должны решить, чтобы цена упала до минимума
+    decay: 10
+    # Минимальная цена
+    minimum: 10
+
+# Опциональные настройки, включайте по мере необходимости
+# Коннект к удаленной машине, может быть nc или URL к сайту
+connection_info: https://knyaz.tasks.ctf.vrnctf.ru/
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{sl0v3n1k_k3ys}",
+    data: "case_insensitive",
+  }
+
+
+# Секция с файликами, которые отдаются участниками. Относительный путь от папки public
+files:
+   - public/task.zip
+
+# Отображение на платформе. visible/hidden
+state: visible
+# Версия вашей задачи
+version: "0.1"

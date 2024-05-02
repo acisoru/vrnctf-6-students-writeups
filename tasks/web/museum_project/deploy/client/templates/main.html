@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайны Рускаго Старины и Змиев: Проникновение въ Музей</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+<img src="/static/images/background.jpg" alt="Фоновое изображение" class="background-image">
+<header class="bg-dark text-white py-3 text-center">
+    <h1>Тайны Рускаго Старины и Змиев</h1>
+    <h2>Проникновение въ Музей</h2>
+    <nav class="d-flex justify-content-center">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/feedback">Обратная связь</a>
+            </li>
+            <li>
+                <button id="toggle-music-button" class="yellow-text-button" onclick="toggleMusic()">Включить/Выключить
+                    музыку
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mt-4 text-shadow bg-transparency text-black" style="margin-bottom: 520px">
+    <section>
+        <h3>Описание сервиса</h3>
+        <p>Вас благословити к входованию в мир намоленных браконьер, чтущих древне Русь миф, древности, и скрытых таин.
+            Окутаетесь в чарующим владыкой прошлых дней, где ястиевы, змеи, и драконы изволят зачаровывать доселе.
+            Вступите в строю ободренных и серебреных путешественников Неоготическаго музея, и осмели так и быть значит
+            сплетать решения тайными кодовыми созвезденями. Ужель сам старайся и приумножь свою силу и умственность!
+            Будь воином загадок и сокровищ, разбираючи тайных виртуальнаго музея!</p>
+    </section>
+
+    <section>
+        <h3>Галерея артефактов</h3>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <figure class="figure">
+                    <img src="/static/images/1.png" alt="Артефакт 1"
+                         class="figure-img img-fluid rounded gallery-img">
+                    <figcaption class="figure-caption">Артефакт 1: Древний рус поражает ящера своей силушкой
+                        богатырской
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 mb-4">
+                <figure class="figure">
+                    <img src="/static/images/2.png" alt="Артефакт 2"
+                         class="figure-img img-fluid rounded gallery-img">
+                    <figcaption class="figure-caption">Артефакт 2: Русы готовятся к великому сражению</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 mb-4">
+                <figure class="figure">
+                    <img src="/static/images/3.png" alt="Артефакт 3"
+                         class="figure-img img-fluid rounded gallery-img">
+                    <figcaption class="figure-caption">Артефакт 3: Русы отстроили Камчатку</figcaption>
+                </figure>
+            </div>
+            <!-- Добавить остальные изображения артефактов -->
+        </div>
+    </section>
+
+
+
+</main>
+
+<footer class="bg-dark text-white py-3 text-center mt-4">
+    <p>&copy; 2022 Тайны Рускаго Старины и Змиев | Все права защищены</p>
+</footer>
+<audio id="background-music" src="/static/audio/background.mp3" autoplay></audio>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

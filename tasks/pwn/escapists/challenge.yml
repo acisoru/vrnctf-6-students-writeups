@@ -1,0 +1,33 @@
+name: Escapists
+author: "@m41den"
+description: |
+  `@m41den`
+  
+  Последняя операция русов увенчалась успехом, мы получили доступ к одному из центральных компьютеров ящеров, однако нам
+  все еще кажется, что мы в ловушке какой-то хитрой системы. Агент "Перун", найдите флаг и выберитесь оттуда!
+category: pwn
+value: 100
+type: dynamic
+
+extra: # сами посчитайте
+  initial: 100
+  decay: 10
+  minimum: 10
+
+connection_info: ssh perun@tasks.ctf.vrnctf.ru -p 2222
+
+# Флаги. Их может быть очень много, но обычно делают один
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{HYPERB0REA_H4S_ORB1TAL_CANN0NS}",
+    data: "case_insensitive",
+  }
+
+# Публичны, видят участники. Можно вешать теги на задачи
+tags:
+  - pwn
+  - escape
+state: visible
+# Версия вашей задачи
+version: "1.0"

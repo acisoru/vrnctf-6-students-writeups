@@ -1,0 +1,26 @@
+name: The Curvy ones
+author: "@alexereh"
+description: |
+  `@alexereh`
+
+  Ящеры зашифровали информацию, пробормотав что-то про порядок. Что же они зашифровали?
+category: crypto
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{ECC_1s_H@RD}"
+    }
+
+files:
+  - public/task.sage
+  - public/output.txt
+
+state: visible
+version: "0.1"

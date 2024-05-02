@@ -1,0 +1,8 @@
+name: escapists
+services:
+  escapists:
+    build: .
+    ports:
+      - "2222:22"
+    cap_add:
+      - SYS_CHROOT

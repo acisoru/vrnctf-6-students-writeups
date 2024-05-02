@@ -1,0 +1,28 @@
+name: The Perun's speech
+author: "@alexereh"
+description: |
+  `@alexereh`
+
+  Во время очередного сокрытия связь русов с Перуном прервалась, но слова уже оказались сокрыты. 
+  Разберитесь и восстановите слова! 
+category: crypto
+value: 100
+type: dynamic
+extra:
+  initial: 100
+  decay: 10
+  minimum: 10
+
+flags:
+  - {
+    type: "static",
+    content: "vrnctf{crypt0_bumm3r_ru5ty}"
+    }
+
+files:
+  - public/task.zip
+  - public/words.txt
+  - public/encrypted.bin
+
+state: visible
+version: "0.1"
